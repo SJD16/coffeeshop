@@ -1,0 +1,10 @@
+coffe_proj/
+__pycache__/
+coffeeshop/__init__.py
+coffeeshop/__pycache__/__init__.cpython-313.pyc
+coffeeshop/__pycache__/settings.cpython-313.pyc
+restaurant/migrations/__init__.py
+*.pyc
+db.sqlite3
+*.log
+restaurant/migrations/
