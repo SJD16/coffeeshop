@@ -1,0 +1,137 @@
+[
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 1,
+    "fields": {
+      "menu_item": 1,
+      "ingredient": 1,
+      "quantity": 18
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 2,
+    "fields": {
+      "menu_item": 1,
+      "ingredient": 5,
+      "quantity": 30
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 3,
+    "fields": {
+      "menu_item": 2,
+      "ingredient": 1,
+      "quantity": 18
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 4,
+    "fields": {
+      "menu_item": 2,
+      "ingredient": 2,
+      "quantity": 200
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 5,
+    "fields": {
+      "menu_item": 2,
+      "ingredient": 3,
+      "quantity": 5
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 6,
+    "fields": {
+      "menu_item": 3,
+      "ingredient": 1,
+      "quantity": 18
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 7,
+    "fields": {
+      "menu_item": 3,
+      "ingredient": 2,
+      "quantity": 150
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 8,
+    "fields": {
+      "menu_item": 3,
+      "ingredient": 3,
+      "quantity": 5
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 9,
+    "fields": {
+      "menu_item": 4,
+      "ingredient": 2,
+      "quantity": 200
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 10,
+    "fields": {
+      "menu_item": 4,
+      "ingredient": 4,
+      "quantity": 30
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 11,
+    "fields": {
+      "menu_item": 4,
+      "ingredient": 3,
+      "quantity": 10
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 12,
+    "fields": {
+      "menu_item": 5,
+      "ingredient": 6,
+      "quantity": 10
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 13,
+    "fields": {
+      "menu_item": 5,
+      "ingredient": 5,
+      "quantity": 200
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 14,
+    "fields": {
+      "menu_item": 5,
+      "ingredient": 7,
+      "quantity": 1
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 15,
+    "fields": {
+      "menu_item": 5,
+      "ingredient": 3,
+      "quantity": 10
+    }
+  }
+]

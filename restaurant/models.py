@@ -1,19 +1,31 @@
 from django.db import models
 
+class IngredientManager(models.Manager):
+    def get_by_natural_key(self, name):
+        return self.get(name=name)
 # Create your models here.
 class Ingredient(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, unique=True)
+    unit = models.CharField(max_length=50)  # 'kg', 'liters', 'units', etc.
     price_per_unit = models.DecimalField(max_digits=6, decimal_places=2)
     quantity_available = models.FloatField()  # e.g., in grams, liters, units
-
+    objects = IngredientManager()
+    def natural_key(self):
+        return (self.name,)
+    
     def __str__(self):
         return self.name
 
-
+class MenuItemManager(models.Manager):
+    def get_by_natural_key(self, name):
+        return self.get(name=name)
 # Menu item (what customers can order)
 class MenuItem(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, unique=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
+    objects = MenuItemManager()
+    def natural_key(self):
+        return (self.name,)
 
     def __str__(self):
         return self.name

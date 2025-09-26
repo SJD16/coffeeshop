@@ -1,0 +1,82 @@
+[
+  {
+    "model": "restaurant.ingredient",
+    "pk": 1,
+    "fields": {
+      "name": "Coffee Beans",
+      "unit": "grams",
+      "price_per_unit": "0.02",
+      "quantity_available": 5000
+    }
+  },
+  {
+    "model": "restaurant.ingredient",
+    "pk": 2,
+    "fields": {
+      "name": "Milk",
+      "unit": "ml",
+      "price_per_unit": "0.01",
+      "quantity_available": 2000
+    }
+  },
+  {
+    "model": "restaurant.ingredient",
+    "pk": 3,
+    "fields": {
+      "name": "Sugar",
+      "unit": "grams",
+      "price_per_unit": "0.005",
+      "quantity_available": 1000
+    }
+  },
+  {
+    "model": "restaurant.ingredient",
+    "pk": 4,
+    "fields": {
+      "name": "Chocolate",
+      "unit": "grams",
+      "price_per_unit": "0.03",
+      "quantity_available": 500
+    }
+  },
+  {
+    "model": "restaurant.ingredient",
+    "pk": 5,
+    "fields": {
+      "name": "Water",
+      "unit": "ml",
+      "price_per_unit": "0.001",
+      "quantity_available": 10000
+    }
+  },
+  {
+    "model": "restaurant.ingredient",
+    "pk": 6,
+    "fields": {
+      "name": "Tea Leaves",
+      "unit": "grams",
+      "price_per_unit": "0.015",
+      "quantity_available": 1000
+    }
+  },
+  {
+    "model":"restaurant.ingredient",
+    "pk":7,
+    "fields":{
+      "name":"Lemon",
+      "unit":"units",
+      "price_per_unit":"0.20",
+      "quantity_available":100
+    }
+  },
+    {
+    "model": "restaurant.ingredient",
+    "pk": 8,
+    "fields": {
+      "name": "Splenda",
+      "unit": "grams",
+      "price_per_unit": "4.00",
+      "quantity_available": 1000
+    }
+  }
+]

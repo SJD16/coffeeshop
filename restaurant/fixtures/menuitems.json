@@ -1,0 +1,42 @@
+[
+    {
+    "model": "restaurant.menuitem",
+    "pk": 1,
+    "fields": {
+      "name": "Espresso",
+      "price": "2.00"
+    }
+  },
+  {
+    "model": "restaurant.menuitem",
+    "pk": 2,
+    "fields": {
+      "name": "Latte",
+      "price": "3.50"
+    }
+  },
+  {
+    "model": "restaurant.menuitem",
+    "pk": 3,
+    "fields": {
+      "name": "Cappuccino",
+      "price": "3.80"
+    }
+  },
+  {
+    "model": "restaurant.menuitem",
+    "pk": 4,
+    "fields": {
+      "name": "Hot Chocolate",
+      "price": "3.00"
+    }
+  },
+  {
+    "model": "restaurant.menuitem",
+    "pk": 5,
+    "fields": {
+      "name": "Iced Tea",
+      "price": "2.50"
+    }
+  }
+]

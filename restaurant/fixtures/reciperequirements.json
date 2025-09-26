@@ -1,0 +1,137 @@
+[
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 1,
+    "fields": {
+      "menu_item": ["Espresso"],
+      "ingredient": ["Coffee Beans"],
+      "quantity": 18
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 2,
+    "fields": {
+      "menu_item": ["Espresso"],
+      "ingredient": ["Water"],
+      "quantity": 30
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 3,
+    "fields": {
+      "menu_item": ["Latte"],
+      "ingredient": ["Coffee Beans"],
+      "quantity": 18
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 4,
+    "fields": {
+      "menu_item": ["Latte"],
+      "ingredient": ["Milk"],
+      "quantity": 200
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 5,
+    "fields": {
+      "menu_item": ["Latte"],
+      "ingredient": ["Sugar"],
+      "quantity": 5
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 6,
+    "fields": {
+      "menu_item": ["Cappuccino"],
+      "ingredient": ["Coffee Beans"],
+      "quantity": 18
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 7,
+    "fields": {
+      "menu_item": ["Cappuccino"],
+      "ingredient": ["Milk"],
+      "quantity": 150
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 8,
+    "fields": {
+      "menu_item": ["Cappuccino"],
+      "ingredient": ["Sugar"],
+      "quantity": 5
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 9,
+    "fields": {
+      "menu_item": ["Hot Chocolate"],
+      "ingredient": ["Milk"],
+      "quantity": 200
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 10,
+    "fields": {
+      "menu_item": ["Hot Chocolate"],
+      "ingredient": ["Chocolate"],
+      "quantity": 30
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 11,
+    "fields": {
+      "menu_item": ["Hot Chocolate"],
+      "ingredient": ["Sugar"],
+      "quantity": 10
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 12,
+    "fields": {
+      "menu_item": ["Iced Tea"],
+      "ingredient": ["Tea Leaves"],
+      "quantity": 10
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 13,
+    "fields": {
+      "menu_item": ["Iced Tea"],
+      "ingredient": ["Water"],
+      "quantity": 200
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 14,
+    "fields": {
+      "menu_item": ["Iced Tea"],
+      "ingredient": ["Lemon"],
+      "quantity": 1
+    }
+  },
+  {
+    "model": "restaurant.reciperequirement",
+    "pk": 15,
+    "fields": {
+      "menu_item": ["Iced Tea"],
+      "ingredient": ["Sugar"],
+      "quantity": 10
+    }
+  }
+]
