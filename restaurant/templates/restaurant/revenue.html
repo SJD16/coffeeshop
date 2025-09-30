@@ -1,0 +1,28 @@
+{% extends 'restaurant/base.html' %}
+{% block title %}Revenue Report{% endblock %}
+{% block header %}Revenue Report{% endblock %}
+{% block content %}
+<h2>Revenue 💰</h2>
+<p><strong>Total Sales:</strong> {{ total_sales }}</p>
+<p><strong>Total Revenue:</strong> ${{ total_revenue }}</p>
+
+<h3>Sales Details</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+      <th>Timestamp</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for p in purchases %}
+    <tr>
+      <td>{{ p.menu_item.name }}</td>
+      <td>${{ p.menu_item.price }}</td>
+      <td>{{ p.timestamp|date:"Y-m-d H:i" }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

@@ -28,3 +28,21 @@ To upload the data to the DB from Json files use:
 python manage.py loaddata ingredients.json
 python manage.py loaddata menuitems.json
 python manage.py loaddata reciperequirements.json
+
+
+To generate a relation graphic of the DB
+install 
+ pip install django-extensions  
+ pip install pydotplus           
+ and on settings.py add on "INSTALLED_APPS"
+
+ 'django_extensions',
+
+ then run 
+
+ python manage.py graph_models -a -g -o myapp_models.dot
+
+ then use: 
+ dreampuf.github.io/GraphvizOnline
+
+ to display it
