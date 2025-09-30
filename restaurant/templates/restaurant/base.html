@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %} {% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'your_app/css/styles.css' %}">
+</head>
+<body>
+  <header>
+    <h1>Restaurant Manager</h1>
+    <nav>
+      <a href="{% url 'ingredients' %}">Ingredients</a> |
+      <a href="{% url 'menu_items' %}">Menu</a> |
+      <a href="{% url 'log' %}">Reports</a>
+      <a href="{% url 'recipe' item_id=1 %}">Sample Recipe</a>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}
+
+    {% endblock %}
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Restaurant Manager</p>
+  </footer>
+</body>
+</html>

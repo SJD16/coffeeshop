@@ -1,0 +1,28 @@
+{% extends 'restaurant/base.html' %}
+
+{% block title %}Menu page{% endblock %}
+{% block header %}Current Menu{% endblock %}
+
+{% block content %}
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Price per Unit</th>
+    
+  </tr>
+  {% for menu in menu_items %}
+  <tr>
+    <td>{{ menu.name }}</td>
+    
+    <td>{{ menu.price }}</td>
+
+    <td><a href="{% url 'recipe' item_id=menu.id %}">View Recipe</a></td>
+    <td><a href="{% url 'purchases' item_id=menu.id %}" class="btn btn-success btn-sm">Purchase</a></td>
+  </tr>
+  {% empty %}
+  <tr>
+    <td colspan="4">No menu found.</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

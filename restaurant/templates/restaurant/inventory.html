@@ -1,0 +1,27 @@
+{% extends 'restaurant/base.html' %}
+
+{% block title %}Inventory{% endblock %}
+{% block header %}Current Inventory{% endblock %}
+
+{% block content %}
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Unit</th>
+    <th>Price per Unit</th>
+    <th>Quantity Available</th>
+  </tr>
+  {% for item in ingredients %}
+  <tr>
+    <td>{{ item.name }}</td>
+    <td>{{ item.unit }}</td>
+    <td>{{ item.price_per_unit }}</td>
+    <td>{{ item.quantity_available }}</td>
+  </tr>
+  {% empty %}
+  <tr>
+    <td colspan="4">No ingredients found.</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

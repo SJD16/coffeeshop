@@ -1,0 +1,30 @@
+{% extends 'restaurant/base.html' %}
+
+{% block title %}Purchase Log{% endblock %}
+{% block header %}Purchase Log{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h2>Purchase Log 🧾</h2>
+  {% if purchases %}
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Timestamp</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for purchase in purchases %}
+      <tr>
+        <td>{{ purchase.menu_item.name }}</td>
+        <td>{{ purchase.timestamp|date:"Y-m-d H:i" }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <p>No purchases yet.</p>
+  {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'restaurant/base.html' %}
+
+{% block title %}Purchase Confirmation{% endblock %}
+{% block header %}Purchase Confirmation{% endblock %}
+{% block content %}
+<div class="container">
+  <h2>Purchase Successful ✅</h2>
+  <p>You purchased: <strong>{{ item.name }}</strong></p>
+  <p>Price: ${{ item.price }}</p>
+
+  <a href="{% url 'menu' %}" class="btn btn-primary">Back to Menu</a>
+  <a href="{% url 'log' %}" class="btn btn-secondary">View Purchase Log</a>
+</div>
+{% endblock %}

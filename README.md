@@ -23,3 +23,8 @@ python manage.py shell
 from restaurant.models import Ingredient, MenuItem, RecipeRequirement, Purchase
 ## Query data
 i= Ingredient.objects.create()
+
+To upload the data to the DB from Json files use:
+python manage.py loaddata ingredients.json
+python manage.py loaddata menuitems.json
+python manage.py loaddata reciperequirements.json
