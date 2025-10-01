@@ -3,6 +3,8 @@ from django.contrib import messages
 from .models import Ingredient, MenuItem, RecipeRequirement, Purchase
 from django.http import HttpResponse
 from django.db.models import Sum, Count
+from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def home(request):
@@ -14,10 +16,12 @@ def menu(request):
 
 
 #we take all ingredients from the database and pass them ('ingredients') to the template
+@login_required
 def inventory_view(request):
     ingredients = Ingredient.objects.all()
     return render(request, 'restaurant/inventory.html', {'ingredients': ingredients})
 
+@login_required
 def delete_ingredient(request, item_id):
     #ingredient = get_object_or_404(Ingredient, id=ingredient_id)
     ingredient = Ingredient.objects.filter(id=item_id)
@@ -25,6 +29,7 @@ def delete_ingredient(request, item_id):
     messages.success(request, "Ingredient deleted successfully!")
     return redirect('ingredients')
 
+@login_required
 def purchase_item(request, item_id):
     item = get_object_or_404(MenuItem, id=item_id)
 
@@ -49,16 +54,16 @@ def purchase_item(request, item_id):
 
     # Redirect to log (prevents duplicate on refresh)    
     return redirect('purchase_confirmation', item_id=item.id)
-
+@login_required
 def purchase_confirmation(request, item_id):
     item2 = MenuItem.objects.get(id=item_id)
     return render(request, 'restaurant/purchase.html', {'item': item2})
     
-
+@login_required
 def log_view(request):
     purchases = Purchase.objects.all().order_by('-timestamp')
     return render(request, 'restaurant/log.html', {'purchases': purchases})
-
+@login_required
 def recipe_view(request, item_id):
     item = MenuItem.objects.get(id=item_id)
     requirements = RecipeRequirement.objects.filter(menu_item=item)
@@ -66,7 +71,7 @@ def recipe_view(request, item_id):
     return render(request, 'restaurant/recipe.html', {'item': item, 'requirements': requirements})
 
 
-
+@login_required
 def revenue_view(request):
     purchases = Purchase.objects.select_related('menu_item')
     total_revenue = purchases.aggregate(Sum('menu_item__price'))['menu_item__price__sum'] or 0
