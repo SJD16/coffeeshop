@@ -114,13 +114,14 @@ http://127.0.0.1:8000/
 
 ### Default Routes
 
-Feature	URL
-Login	/users/login/
-Menu	/restaurant/menu/
-Inventory	/restaurant/inventory/
-Purchases	/restaurant/purchases/
-Revenue	/restaurant/revenue/
-Admin Panel	/admin/
+| Feature        | URL                     |
+|----------------|--------------------------|
+| Login          | `/users/login/`          |
+| Menu           | `/restaurant/menu/`      |
+| Inventory      | `/restaurant/inventory/`|
+| Purchases      | `/restaurant/purchases/`|
+| Revenue        | `/restaurant/revenue/`  |
+| Admin Panel    | `/admin/`                |
 
 
 ## Future Improvements
