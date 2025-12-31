@@ -1,8 +1,151 @@
 # Coffe Shop App With Django
 
-Welcome to...
+# ☕ CoffeeShop Management System (Django)
 
-## What’s Inside:
+A Django-based web application designed to manage a coffee shop's daily operations, including menu management, inventory tracking, customer purchases, and revenue monitoring.  
+
+---
+
+## Features
+
+### 👤 User Authentication
+- User login and logout using Django’s built-in authentication system
+- Access control for protected views (management features)
+
+### 📋 Menu Management
+- View all menu items
+- View detailed recipes linked to each menu item
+- Purchase items directly from the menu
+
+### 📦 Inventory Management
+- View all ingredients in inventory
+- Automatically update ingredient quantities after each purchase
+- Delete ingredients from inventory
+
+### 🧾 Purchase & Logs
+- Log every purchase with timestamp
+- View purchase history
+- Prevent duplicate purchases on page refresh
+
+### 💰 Revenue & Profit Tracking
+- View total sales
+- Calculate total revenue based on menu item prices
+- Display detailed purchase records
+
+---
+
+## 🏗️ Project Structure
+
+coffeShop/
+│
+├── coffeeshop/ # Main project configuration
+│ ├── settings.py
+│ ├── urls.py
+│ └── ...
+│
+├── restaurant/ # Core restaurant logic
+│ ├── models.py
+│ ├── views.py
+│ ├── urls.py
+│ ├── templates/
+│ │ └── restaurant/
+│ └── ...
+│
+├── users/ # Authentication (login/logout)
+│ ├── views.py
+│ ├── urls.py
+│ ├── templates/
+│ │ └── users/
+│ └── ...
+│
+├── manage.py
+└── README.md
+
+## ⚙️ Technologies Used
+
+- Python 3
+- Django
+- SQLite (default, can be replaced with PostgreSQL/MySQL)
+- HTML / CSS (Bootstrap-ready)
+- Django ORM
+- Django Authentication System
+
+---
+
+## 🛠️ Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/your-username/coffeeShop.git
+cd coffeeShop
+```
+### Create virtual environment
+
+python -m venv venv
+source venv/bin/activate   # Linux / macOS
+venv\Scripts\activate      # Windows
+
+Install dependencies
+
+pip install django
+
+
+Run migrations
+
+python manage.py makemigrations
+python manage.py migrate
+
+Create superuser
+
+python manage.py createsuperuser
+
+Run the server
+python manage.py runserver
+
+Open your browser and go to:
+
+http://127.0.0.1:8000/
+
+
+Default Routes
+
+
+Feature	URL
+Login	/users/login/
+Menu	/restaurant/menu/
+Inventory	/restaurant/inventory/
+Purchases	/restaurant/purchases/
+Revenue	/restaurant/revenue/
+Admin Panel	/admin/
+
+
+Future Improvements
+
+Role-based permissions (Owner vs Customer)
+
+Online payment integration
+
+Sales charts and analytics
+
+REST API (Django REST Framework)
+
+Improved UI with Bootstrap/Tailwind
+
+Deployment (Docker / Cloud)
+
+
+Author
+Developed by SJD
+Engineering & Django Project
+Mexico 🇲🇽
+
+License
+
+This project is for educational and portfolio purposes.
+
+
+
+
 
    * coffeshop
    * restaurant
