@@ -1,5 +1,3 @@
-# Coffe Shop App With Django
-
 # ☕ CoffeeShop Management System (Django)
 
 A Django-based web application designed to manage a coffee shop's daily operations, including menu management, inventory tracking, customer purchases, and revenue monitoring.  
@@ -112,7 +110,7 @@ Open your browser and go to:
 http://127.0.0.1:8000/
 ```
 
-### Default Routes
+## Default Routes
 
 | Feature        | URL                     |
 |----------------|--------------------------|
@@ -135,8 +133,8 @@ http://127.0.0.1:8000/
 
 
 ## Author
-Developed by SJD
-Engineering & Django Project
+Developed by **SJD**  
+Engineering & Django Project  
 Mexico 🇲🇽
 
 ## License
@@ -145,7 +143,8 @@ This project is for educational and portfolio purposes.
 
      [Wireshark HTTP Analysis](./2.%20Wireshark%20HTTP%20Analysis/Wireshark-analysis.md)
    
-## extra notes
+## Extra Notes
+Useful commands and tools for database inspection and development.
 ### If you change the models How to check the DB
    *   You need to open your python shell
 ```
